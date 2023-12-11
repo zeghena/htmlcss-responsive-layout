@@ -1,5 +1,28 @@
+:root {
+    --primary-color: #9792e4;
+    --secondary-color: #0084fd;
+    --card-bg-color: #b5ddff;
+    --card-color: #5b6f81;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* ####  utils  #### */
+
+.container {
+    width: 1080px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* ###  HEADER  #### */
+
+#header {
+    secondary-color: var(--secondary-color);
+    color: white;
+
 }
