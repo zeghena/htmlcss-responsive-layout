@@ -3,6 +3,7 @@
   --secondary-color: #0084fd;
   --card-bg-color: #b5ddff;
   --card-color: #5b6f81;
+  --primary-text-color: #353535;
 }
 
 * {
@@ -10,6 +11,18 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+}
+
+body > section {
+  padding: 3rem 0;
+  background-color: white;
+  color: #353535;
+}
+
+body > section:nth-of-type(even) {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 /* ####  GRID #### */
@@ -94,19 +107,38 @@
 }
 
 /* ##### SECTION PLANNING #####  */
-#planning {
-  min-width: 1080px;
-  background-color: var(--primary-color);
+#planning .col {
+  width: 50%;
+  border: 1px solid black;
+
   color: white;
 }
 
-.row {
-  /* min-width: 900px; */
+#planning .container {
+  max-width: 800px;
+}
+#planning .container .row {
+  align-items: flex-end;
+}
+#planning .card {
+  padding: 1rem;
+  background-color: white;
+  color: var(--primary-text-color);
+}
+
+/* #### section testimonials #####  */
+.card {
+  background-color: var(--primary-color);
+  color: white;
+}
+#testimonials .container {
 }
 
 /* ####   MEDIA QUERY  ####  */
 
 /* ###  TABLET MEDIA  ####  */
+
+/* ### section demo app ### */
 
 @media screen and (max-width: 768px) {
   #demo-app .card .col {
@@ -115,5 +147,21 @@
     padding-bottom: 15px;
   }
 }
+#demo-app .row .col {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* ##### SECTION PLANNING #####  */
+#planning .col {
+  width: 100%;
+}
 
 /* ###  MOBILE MEDIA  ####  */
+@media screen and (max-width: 768px) {
+  #demo-app .row .col {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
