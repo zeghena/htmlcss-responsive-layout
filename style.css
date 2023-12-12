@@ -187,10 +187,22 @@ body > section:nth-of-type(even) {
 }
 
 /* ###  MOBILE MEDIA  ####  */
-@media screen and (max-width: 768px) {
+
+/* #### section DEMO APP #####  */
+
+@media screen and (max-width: 480px) {
   #demo-app .row .col {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  /* #### section testimonials #####  */
+  #testimonials .col.col-left {
+    width: 100%;
+  }
+
+  #testimonials .col.col-left {
+    width: 100%;
   }
 }
