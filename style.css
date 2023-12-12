@@ -163,6 +163,29 @@ body > section:nth-of-type(even) {
 
 /* #### section BENEFIT #####  */
 
+#benefit .card {
+  padding: 1rem;
+  background-color: white;
+  color: var(--primary-text-color);
+}
+
+#benefit .col {
+  width: calc(100% / 3);
+}
+
+/* <!-- ##### SECTION ABOUT #####  --> */
+#about .col.col-left {
+  width: 55%;
+}
+
+#about .col.col-left {
+  width: 45%;
+}
+
+.btn {
+  width: 20px;
+}
+
 /* ####   MEDIA QUERY  ####  */
 
 /* ###  TABLET MEDIA  ####  */
@@ -170,22 +193,35 @@ body > section:nth-of-type(even) {
 /* ### section demo app ### */
 
 @media screen and (max-width: 768px) {
+  /* <!-- ####  section Header #####  -->  */
+  .lista {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
   #demo-app .card .col {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-}
-#demo-app .row .col {
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-/* ##### SECTION PLANNING #####  */
-#planning .col {
-  width: 100%;
-}
 
+  #demo-app .row .col {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  /* ##### SECTION PLANNING #####  */
+  #planning .col {
+    width: 100%;
+  }
+
+  /* #### section BENEFIT #####  */
+  #benefit .col {
+    width: 50%;
+  }
+}
 /* ###  MOBILE MEDIA  ####  */
 
 /* #### section DEMO APP #####  */
@@ -202,7 +238,17 @@ body > section:nth-of-type(even) {
     width: 100%;
   }
 
-  #testimonials .col.col-left {
+  .img-round {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col .col-right {
+    text-align: center;
+  }
+
+  /* #### section BENEFIT #####  */
+  #benefit .col {
     width: 100%;
   }
 }
