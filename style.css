@@ -17,7 +17,7 @@ body {
 /* ####  GRID #### */
 
 .container {
-    max-width: 1080px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -39,8 +39,12 @@ body {
 
 .col {
     padding: 15px;
+    gap: 15px;
 }
 
+.card {
+    width: 100%;
+}
 
 /* ####  utils  #### */
 
@@ -98,3 +102,20 @@ body {
     padding: 1rem;
     background-color: var(--card-bg-color);
 }
+
+
+/* ####   MEDIA QUERY  ####  */
+
+
+/* ###  TABLET MEDIA  ####  */
+
+@media screen and (max-width: 768px) {
+    #demo-app .card .col {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
+/* ###  MOBILE MEDIA  ####  */
