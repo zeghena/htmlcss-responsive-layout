@@ -38,7 +38,7 @@ body {
 
 
 .col {
-    padding 15px
+    padding: 15px;
 }
 
 
@@ -80,6 +80,19 @@ body {
 #demo-app .col:first-child {
     width: calc(100% / 3 * 2);
 }
+
+#demo-app .col:first-child .card {
+    display: flex;
+
+
+}
+
+#demo-app .col:first-child .card-left,
+#demo-app .col:first-child .card-right {
+    width: 50%;
+
+}
+
 
 #demo-app .card {
     padding: 1rem;
